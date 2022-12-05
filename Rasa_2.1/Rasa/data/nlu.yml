@@ -1,0 +1,361 @@
+version : "3.1"
+
+nlu:
+  - lookup: flower
+    examples: |
+      - hoa hồng
+      - hoa sen
+      - hoa đào
+      - hoa mai
+      - hoa cúc
+      - hoa sứ
+      - hoa ly
+      - hoa phượng
+      - hoa huệ
+      - hoa cẩm tú cầu
+      - hoa linh lan
+      - hoa anh đào
+      - hoa tigon
+      - hoa tulip
+      - hoa thiên điểu
+      - hoa bỉ ngạn
+      - hoa mẫu đơn
+      - hoa tử đằng
+      - lan hồ điệp
+      - lan phi điệp
+      - lan hoàng dương
+      - lan hạc vỹ
+      - lan cẩm cù
+      - lan đùi gà
+      - lan ngọc điểm
+      - lan vảy rồng
+      - lan hải yến
+      - lan hoàng nhạn
+      - hoa lay ơn
+      - hoa nhài
+      - hoa tường vi
+      - hoa cẩm chướng 
+      - hoa chấm bi
+      - hoa đồng tiền 
+      - hoa mười giờ
+      - hoa dâm bụt
+      - hoa thược dược
+      - hoa mận
+      - hoa sưa
+      - hoa sữa
+      - hoa sấu
+      - hoa gạo
+      - hoa loa kèn
+      - hoa bằng lăng
+      - hoa xoan
+
+  - intent: greeting
+    examples: |
+      - Xin chào
+      - Chào
+      - Có ai ở đấy không
+      - Alo
+      - Hello
+
+  - intent: ask_flower_info
+    examples: |
+      - [hoa đào](flower) là gì
+      - cây [hoa mai](flower) là gì
+      - thông tin [hoa sen](flower)
+      - định nghĩa [hoa hồng](flower)
+      - khái niệm về [hoa hồng](flower)
+      - [hoa đào](flower) là gì?
+      - cây [hoa mai](flower) là gì?
+      - thông tin [hoa sen](flower)?
+      - định nghĩa [hoa hồng](flower)?
+      - khái niệm về [hoa hồng](flower)?
+
+  - intent: ask_flower_body
+    examples: |
+      - thân [hoa hồng](flower)
+      - thân [hoa hồng](flower) là gì
+      - thân cây [hoa hồng](flower) là gì
+      - thông tin thân [hoa hồng](flower)
+      - định nghĩa thân [hoa hồng](flower)
+      - khái niệm về thân [hoa hồng](flower)
+      - thân [hoa hồng](flower)?
+      - thân [hoa hồng](flower) là gì?
+      - thân cây [hoa hồng](flower) là gì?
+      - thông tin thân [hoa hồng](flower)?
+      - định nghĩa thân [hoa hồng](flower)?
+      - khái niệm về thân [hoa hồng](flower)?
+
+  - intent: ask_flower_leaf
+    examples: |
+      - lá [hoa hồng](flower)
+      - lá [hoa hồng](flower) là gì
+      - lá cây [hoa hồng](flower) là gì
+      - thông tin lá [hoa hồng](flower)
+      - định nghĩa lá [hoa hồng](flower)
+      - khái niệm về lá [hoa hồng](flower)
+      - lá [hoa hồng](flower)?
+      - lá [hoa hồng](flower) là gì?
+      - lá cây [hoa hồng](flower) là gì?
+      - thông tin lá [hoa hồng](flower)?
+      - định nghĩa lá [hoa hồng](flower)?
+      - khái niệm về lá [hoa hồng](flower)?
+
+  - intent: ask_flower_root
+    examples: |
+      - rễ [hoa hồng](flower)	
+      - rễ [hoa hồng](flower) là gì	
+      - rễ cây [hoa hồng](flower) là gì	
+      - thông tin rễ [hoa hồng](flower)	
+      - định nghĩa rễ [hoa hồng](flower)
+      - khái niệm về rễ [hoa hồng](flower)
+      - rễ [hoa hồng](flower)?
+      - rễ [hoa hồng](flower) là gì?
+      - rễ cây [hoa hồng](flower) là gì?
+      - thông tin rễ [hoa hồng](flower)?
+      - định nghĩa rễ [hoa hồng](flower)?
+      - khái niệm về rễ [hoa hồng](flower)?
+
+  - intent: ask_flower_color
+    examples: |
+      - màu sắc [hoa hồng](flower)	
+      - màu sắc [hoa hồng](flower) là gì	
+      - màu sắc cây [hoa hồng](flower) là gì	
+      - thông tin màu sắc [hoa hồng](flower)
+      - màu sắc cây [hoa hồng](flower) nhìn như thế nào
+      - màu sắc cây [hoa hồng](flower) trông như thế nào 
+      - màu sắc [hoa hồng](flower)?
+      - màu sắc [hoa hồng](flower) là gì?
+      - màu sắc cây [hoa hồng](flower) là gì?
+      - thông tin màu sắc [hoa hồng](flower)?
+      - màu sắc cây [hoa hồng](flower) nhìn như thế nào?
+      - màu sắc cây [hoa hồng](flower) trông như thế nào ?
+
+  - intent: ask_flower_climate
+    examples: |
+      - khí hậu hợp [hoa hồng](flower)
+      - khí hậu hợp với [hoa hồng](flower) là gì
+      - khí hậu giúp [hoa hồng](flower) tốt
+      - khí hậu giúp [hoa hồng](flower) sinh trưởng tốt
+      - khí hậu thường gặp để trồng [hoa hồng](flower)
+      - khí hậu trồng [hoa hồng](flower) như thế nào
+      - khí hậu hợp [hoa hồng](flower)?
+      - khí hậu hợp với [hoa hồng](flower) là gì?
+      - khí hậu giúp [hoa hồng](flower) tốt?
+      - khí hậu giúp [hoa hồng](flower) sinh trưởng tốt?
+      - khí hậu thường gặp để trồng [hoa hồng](flower)?
+      - khí hậu trồng [hoa hồng](flower) như thế nào?
+
+  - intent: ask_flower_weather
+    examples: |
+      - thời tiết hợp [hoa hồng](flower)
+      - thời tiết hợp với [hoa hồng](flower) là gì
+      - thời tiết giúp [hoa hồng](flower) tốt
+      - thời tiết giúp [hoa hồng](flower) sinh trưởng tốt
+      - thời tiết thường gặp để trồng [hoa hồng](flower)
+      - thời tiết trồng [hoa hồng](flower) như thế nào
+      - thời tiết hợp [hoa hồng](flower)?
+      - thời tiết hợp với [hoa hồng](flower) là gì?
+      - thời tiết giúp [hoa hồng](flower) tốt?
+      - thời tiết giúp [hoa hồng](flower) sinh trưởng tốt?
+      - thời tiết thường gặp để trồng [hoa hồng](flower)?
+      - thời tiết trồng [hoa hồng](flower) như thế nào?
+
+  - intent: ask_flower_price
+    examples: |
+      - giá [hoa hồng](flower)
+      - giá [hoa hồng](flower) bao nhiêu
+      - giá [hoa hồng](flower) khoảng bao nhiêu
+      - thông tin giá [hoa hồng](flower)
+      - bao nhiêu tiền cho một cây [hoa hồng](flower)
+      - một cây [hoa hồng](flower) có giá như thế nào
+      - giá [hoa hồng](flower)?
+      - giá [hoa hồng](flower) bao nhiêu?
+      - giá [hoa hồng](flower) khoảng bao nhiêu?
+      - thông tin giá [hoa hồng](flower)?
+      - bao nhiêu tiền cho một cây [hoa hồng](flower)?
+      - một cây [hoa hồng](flower) có giá như thế nào?
+
+  - intent: ask_flower_season
+    examples: |
+      - [hoa hồng](flower) ra hoa vào mùa nào
+      - [hoa hồng](flower) ra hoa vào thời gian nào
+      - [hoa hồng](flower) ra hoa vào thời gian nào trong năm
+      - thông tin thời gian [hoa hồng](flower) ra hoa
+      - [hoa hồng](flower) ra hoa vào thời tiết nào
+      - [hoa hồng](flower) ra hoa vào thời điểm nào
+      - [hoa hồng](flower) ra hoa vào mùa nào?
+      - [hoa hồng](flower) ra hoa vào thời gian nào?
+      - [hoa hồng](flower) ra hoa vào thời gian nào trong năm?
+      - thông tin thời gian [hoa hồng](flower) ra hoa?
+      - [hoa hồng](flower) ra hoa vào thời tiết nào?
+      - [hoa hồng](flower) ra hoa vào thời điểm nào?
+
+  - intent: ask_flower_grow
+    examples: |
+      - cách trồng [hoa hồng](flower)
+      - trồng [hoa hồng](flower) vào thời điểm nào
+      - các bước để trồng [hoa hồng](flower)
+      - bước trồng [hoa hồng](flower)
+      - trồng [hoa hồng](flower)
+      - trồng [hoa hồng](flower) như thế nào
+      - trồng [hoa sen](flower)
+      - cách trồng [hoa hồng](flower)?
+      - trồng [hoa hồng](flower) vào thời điểm nào?
+      - các bước để trồng [hoa hồng](flower)?
+      - bước trồng [hoa hồng](flower)?
+      - trồng [hoa hồng](flower)?
+      - trồng [hoa hồng](flower) như thế nào?
+      - trồng [hoa sen](flower)?
+
+  - intent: ask_flower_care
+    examples: |
+      - cách chăm [hoa hồng](flower)
+      - cách chăm [hoa hồng](flower) là gì
+      - cách chăm sóc [hoa hồng](flower)
+      - thông tin cách chăm sóc [hoa hồng](flower)
+      - [hoa hồng](flower) hợp với loại phân, đạm nào
+      - cách chăm [hoa hồng](flower) như thế nào 
+      - cách chăm [hoa hồng](flower)?
+      - cách chăm [hoa hồng](flower) là gì?
+      - cách chăm sóc [hoa hồng](flower)?
+      - thông tin cách chăm sóc [hoa hồng](flower)?
+      - [hoa hồng](flower) hợp với loại phân, đạm nào?
+      - cách chăm [hoa hồng](flower) như thế nào ?
+
+  - intent: ask_flower_fengshui
+    examples: |
+      - mệnh gì hợp với [hoa hồng](flower)
+      - cây [hoa hồng](flower) hợp với người mệnh nào
+      - cây [hoa hồng](flower) hợp với người tuổi nào	
+      - tuổi hợp với [hoa hồng](flower)
+      - người tuổi gì nên mua [hoa hồng](flower)
+      - người có mệnh gì nên mua [hoa hồng](flower)
+      - mệnh gì hợp với [hoa hồng](flower)?
+      - cây [hoa hồng](flower) hợp với người mệnh nào?
+      - cây [hoa hồng](flower) hợp với người tuổi nào?
+      - tuổi hợp với [hoa hồng](flower)?
+      - người tuổi gì nên mua [hoa hồng](flower)?
+      - người có mệnh gì nên mua [hoa hồng](flower)?
+
+  - intent: ask_flower_buy
+    examples: |
+      - mua [hoa hồng](flower)
+      - cách chọn cây [hoa hồng](flower) đẹp
+      - bí quyết mua [hoa hồng](flower)
+      - nên mua [hoa hồng](flower) như thế nào
+      - mua cây [hoa hồng](flower)
+      - mua [hoa hồng](flower) như thế nào cho đẹp
+      - mua [hoa hồng](flower)?
+      - cách chọn cây [hoa hồng](flower) đẹp?
+      - bí quyết mua [hoa hồng](flower)?
+      - nên mua [hoa hồng](flower) như thế nào?
+      - mua cây [hoa hồng](flower)?
+      - mua [hoa hồng](flower) như thế nào cho đẹp?
+
+  - intent: ask_flower_like
+    examples: |
+      - [hoa hồng](flower) nhìn như thế nào
+      - [hoa sen](flower) trông như thế nào
+      - hình dáng [hoa hồng](flower)
+      - miêu tả [hoa hồng](flower)
+      - miêu tả hình dáng [hoa hồng](flower)
+      - đặc điểm hình dáng [hoa hồng](flower)
+      - [hoa hồng](flower) nhìn như thế nào?
+      - [hoa sen](flower) trông như thế nào?
+      - hình dáng [hoa hồng](flower)?
+      - miêu tả [hoa hồng](flower)?
+      - miêu tả hình dáng [hoa hồng](flower)?
+      - đặc điểm hình dáng [hoa hồng](flower)?
+
+  - intent: ask_flower_bodyLike
+    examples: |
+      - thân cây [hoa hồng](flower) nhìn như thế nào
+      - thân cây [hoa hồng](flower) trông như thế nào
+      - hình dáng thân [hoa hồng](flower)
+      - miêu tả thân [hoa hồng](flower)
+      - miêu tả hình dáng thân [hoa hồng](flower)
+      - đặc điểm hình dáng thân [hoa hồng](flower)
+      - thân cây [hoa hồng](flower) nhìn như thế nào?
+      - thân cây [hoa hồng](flower) trông như thế nào?
+      - hình dáng thân [hoa hồng](flower)?
+      - miêu tả thân [hoa hồng](flower)?
+      - miêu tả hình dáng thân [hoa hồng](flower)?
+      - đặc điểm hình dáng thân [hoa hồng](flower)?
+
+  - intent: ask_flower_leafLike
+    examples: |
+      - lá cây [hoa hồng](flower) nhìn như thế nào
+      - lá cây [hoa hồng](flower) trông như thế nào
+      - hình dáng lá [hoa hồng](flower)
+      - miêu tả lá [hoa hồng](flower)
+      - miêu tả hình dáng lá [hoa hồng](flower)
+      - đặc điểm hình dáng lá [hoa hồng](flower)
+      - lá cây [hoa hồng](flower) nhìn như thế nào?
+      - lá cây [hoa hồng](flower) trông như thế nào?
+      - hình dáng lá [hoa hồng](flower)?
+      - miêu tả lá [hoa hồng](flower)?
+      - miêu tả hình dáng lá [hoa hồng](flower)?
+      - đặc điểm hình dáng lá [hoa hồng](flower)?
+
+  - intent: ask_flower_rootLike
+    examples: |
+      - rễ cây [hoa hồng](flower) nhìn như thế nào
+      - rễ cây [hoa hồng](flower) trông như thế nào
+      - hình dáng rễ [hoa hồng](flower)
+      - miêu tả rễ [hoa hồng](flower)
+      - miêu tả hình dáng rễ [hoa hồng](flower)
+      - đặc điểm hình dáng rễ [hoa hồng](flower)
+      - rễ cây [hoa hồng](flower) nhìn như thế nào?
+      - rễ cây [hoa hồng](flower) trông như thế nào?
+      - hình dáng rễ [hoa hồng](flower)?
+      - miêu tả rễ [hoa hồng](flower)?
+      - miêu tả hình dáng rễ [hoa hồng](flower)?
+      - đặc điểm hình dáng rễ [hoa hồng](flower)?
+
+  - intent: ask_flower_fertilizer
+    examples: |
+      - [hoa hồng](flower) hợp với loại phân đạm nào
+      - phân đạm [hoa hồng](flower)
+      - [hoa hồng](flower) nên dùng loại phân đạm nào
+      - cách chọn phân đạm cho [hoa hồng](flower)
+      - các loại phân thường được sử dụng cho [hoa hồng](flower)
+      - loại phân đạm nào giúp [hoa hồng](flower) phát triển tốt
+      - [hoa hồng](flower) hợp với loại phân đạm nào?
+      - phân đạm [hoa hồng](flower)?
+      - [hoa hồng](flower) nên dùng loại phân đạm nào?
+      - cách chọn phân đạm cho [hoa hồng](flower)?
+      - các loại phân thường được sử dụng cho [hoa hồng](flower)?
+      - loại phân đạm nào giúp [hoa hồng](flower) phát triển tốt?
+
+  - intent: ask_flower_uses
+    examples: |
+      - tác dụng [hoa hồng](flower)
+      - tác dụng của [hoa hồng](flower) là gì
+      - công dụng [hoa hồng](flower)
+      - công dụng [hoa hồng](flower) là gì
+      - công dụng của [hoa hồng](flower) gồm những gì
+      - tác dụng thực tế của [hoa hồng](flower)
+      - tác dụng [hoa hồng](flower)?
+      - tác dụng của [hoa hồng](flower) là gì?
+      - công dụng [hoa hồng](flower)?
+      - công dụng [hoa hồng](flower) là gì?
+      - công dụng của [hoa hồng](flower) gồm những gì?
+      - tác dụng thực tế của [hoa hồng](flower)?
+  - intent: ask_flower_meaningful
+    examples: |
+      - ý nghĩa của [hoa hồng](flower)
+      - ý nghĩa của [hoa hồng](flower) là gì
+      - ý nghĩa khác của [hoa hồng](flower)
+      - ý nghĩa ẩn sau của [hoa hồng](flower)
+      - ý nghĩa sau một bông [hoa hồng](flower)
+      - ý nghĩa của [hoa hồng](flower)?
+      - ý nghĩa của [hoa hồng](flower) là gì?
+      - ý nghĩa khác của [hoa hồng](flower)?
+      - ý nghĩa ẩn sau của [hoa hồng](flower)?
+      - ý nghĩa sau một bông [hoa hồng](flower)?
+
+
+
+
+
+

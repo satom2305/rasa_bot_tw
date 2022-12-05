@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+- greeting
+- ask_flower_info
+- ask_flower_body
+- ask_flower_leaf
+- ask_flower_root
+- ask_flower_color
+- ask_flower_climate
+- ask_flower_weather
+- ask_flower_price
+- ask_flower_season
+- ask_flower_grow
+- ask_flower_care
+- ask_flower_fengshui
+- ask_flower_buy
+- ask_flower_like
+- ask_flower_bodyLike
+- ask_flower_leafLike
+- ask_flower_rootLike
+- ask_flower_fertilizer
+- ask_flower_uses
+- ask_flower_meaningful
+
+entities:
+- flower
+
+slots:
+  flower:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: flower
+
+responses:
+  utter_hello_back:
+    - text: "Chào bạn nhé! Hôm nay bọn tớ có nhiều cây lắm bạn muốn mua cây gì"
+
+actions:
+- action_reply_flower_knowledge
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false

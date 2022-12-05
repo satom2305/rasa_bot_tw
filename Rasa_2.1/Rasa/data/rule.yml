@@ -1,0 +1,107 @@
+version : "3.1"
+
+rules:
+  - rule: Say hello when user say hello
+    steps:
+      - intent: greeting
+      - action: utter_hello_back
+
+  - rule: Utter flower info
+    steps:
+      - intent: ask_flower_info
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower body
+    steps:
+      - intent: ask_flower_body
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower leaf
+    steps:
+      - intent: ask_flower_leaf
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower root
+    steps:
+      - intent: ask_flower_root
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower color
+    steps:
+      - intent: ask_flower_color
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower climate
+    steps:
+      - intent: ask_flower_climate
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower weather
+    steps:
+      - intent: ask_flower_weather
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower season
+    steps:
+      - intent: ask_flower_season
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower grow
+    steps:
+      - intent: ask_flower_grow
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower care
+    steps:
+      - intent: ask_flower_care
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower fengshui
+    steps:
+      - intent: ask_flower_fengshui
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower buy
+    steps:
+      - intent: ask_flower_buy
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower price
+    steps:
+      - intent: ask_flower_price
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower like
+    steps:
+      - intent: ask_flower_like
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower bodyLike
+    steps:
+      - intent: ask_flower_bodyLike
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower leafLike
+    steps:
+      - intent: ask_flower_leafLike
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower rootLike
+    steps:
+      - intent: ask_flower_rootLike
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower fertilizer
+    steps:
+      - intent: ask_flower_fertilizer
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower uses
+    steps:
+      - intent: ask_flower_uses
+      - action: action_reply_flower_knowledge
+
+  - rule: Utter flower meaningful
+    steps:
+      - intent: ask_flower_meaningful
+      - action: action_reply_flower_knowledge

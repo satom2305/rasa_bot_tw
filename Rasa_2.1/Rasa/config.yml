@@ -1,0 +1,52 @@
+# The config recipe.
+recipe: default.v1
+
+# Configuration for Rasa NLU.
+language: vi
+
+pipeline:
+   - name: vietnamese_language_model.vietnamese_tokenizer.VietnameseTokenizer
+     tokenizer: pyvi
+     corenlp_server_url: "http://127.0.0.1:8888"
+     pretrain_path: './pretrained_vietnamese/vncorenlp/'
+#   - name: RegexFeaturizer
+   - name: vietnamese_language_model.vietnamese_language_featurizer.VietnameseLanguageModelFeaturizer
+     model_name: 'roberta'
+     model_weights: './pretrained_vietnamese/'
+     model_path: './pretrained_vietnamese/'
+     cache_dir: './pretrained_vietnamese/'
+     
+   - name: DIETClassifier
+     threshold: 0.7
+     entity_recognition: false
+     intent_classification: true
+     constrain_similarities: true
+     use_masked_language_model: true
+     batch_strategy: sequence
+     epochs: 300
+     num_transformer_layers: 2
+     learning_rate: 0.005
+     embedding_dimension: 128
+     batch_size: [32, 128]
+     use_gpu: true
+
+   - name: "RegexEntityExtractor"
+     case_sensitive: false
+     use_lookup_tables: true
+     use_regexes: true
+     use_word_boundaries: true
+     
+   - name: EntitySynonymMapper
+   
+
+policies:
+   - name: RulePolicy
+   - name: MemoizationPolicy
+     max_history: 5
+     
+   - name: TEDPolicy
+     max_history: 5
+     epochs: 200
+     augmentation_factor: 0
+     constrain_similarities: true
+     use_gpu: false
